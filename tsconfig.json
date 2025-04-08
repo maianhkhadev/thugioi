@@ -8,6 +8,30 @@
     },
     {
       "path": "./apps/web-app"
+    },
+    {
+      "path": "./apps/admin-app-e2e"
+    },
+    {
+      "path": "./apps/admin-app"
+    },
+    {
+      "path": "./apps/mobile-app"
+    },
+    {
+      "path": "./libs/data-access-novels"
+    },
+    {
+      "path": "./libs/data-access-writters"
+    },
+    {
+      "path": "./libs/data-access-categories"
+    },
+    {
+      "path": "./libs/shared/ui-hot-novels"
+    },
+    {
+      "path": "./libs/shared/util-auth"
     }
   ]
 }
