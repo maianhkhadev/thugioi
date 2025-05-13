@@ -1,0 +1,19 @@
+.commentItem {
+  padding: 16px;
+  margin-bottom: 12px;
+  background: #fafafa;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+
+  .username {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #34495e;
+  }
+
+  .content {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+  }
+}

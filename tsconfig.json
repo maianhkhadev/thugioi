@@ -14,6 +14,66 @@
     },
     {
       "path": "./apps/admin-app"
+    },
+    {
+      "path": "./libs/web/ui-hot-novels"
+    },
+    {
+      "path": "./libs/web/ui-novel-overview"
+    },
+    {
+      "path": "./libs/web/ui-novel-details"
+    },
+    {
+      "path": "./libs/web/ui-new-chapters"
+    },
+    {
+      "path": "./libs/web/ui-novel-filters"
+    },
+    {
+      "path": "./libs/web/ui-novel-chapters"
+    },
+    {
+      "path": "./libs/web/ui-novel-comments"
+    },
+    {
+      "path": "./libs/web/ui-novel-search-results"
+    },
+    {
+      "path": "./libs/web/ui-container"
+    },
+    {
+      "path": "./libs/web/ui-header"
+    },
+    {
+      "path": "./libs/web/ui-footer"
+    },
+    {
+      "path": "./libs/shared/data-access-novels"
+    },
+    {
+      "path": "./libs/shared/data-access-chapters"
+    },
+    {
+      "path": "./libs/shared/data-access-categories"
+    },
+    {
+      "path": "./libs/shared/data-access-comments"
+    },
+    {
+      "path": "./libs/shared/data-access-users"
+    },
+    {
+      "path": "./libs/web/ui-reader"
+    },
+    {
+      "path": "./libs/web/ui-writter-details"
+    },
+    {
+      "path": "./libs/web/ui-writter-novels"
+    },
+    {
+      "path": "./libs/web/ui-user-details"
     }
   ]
 }

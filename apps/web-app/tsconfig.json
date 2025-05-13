@@ -40,7 +40,8 @@
     "app/**/*.ts",
     "app/**/*.tsx",
     "next-env.d.ts",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "theme.ts"
   ],
   "exclude": [
     "out-tsc",

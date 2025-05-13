@@ -1,0 +1,26 @@
+.header {
+  background-color: #eeeeee;
+  
+  .bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+    .brand {
+      width: auto;
+      height: 4rem;
+    }
+  }
+
+  .filter {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.categories {
+  display: flex;
+  flex-flow: wrap;
+  gap: 0.5rem;
+}

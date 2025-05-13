@@ -1,0 +1,16 @@
+.novel {
+  display: grid;
+  grid-template-columns: 6rem 1fr;
+  grid-gap: 1rem;
+  color: unset;
+  text-decoration: unset;
+  border: 1px solid #eeeeee;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+
+  img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+  }
+}
