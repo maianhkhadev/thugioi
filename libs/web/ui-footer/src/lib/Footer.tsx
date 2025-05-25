@@ -1,5 +1,5 @@
 'use client';
-import { Title, Paragraph } from 'rebear';
+import { Paragraph } from 'rebear';
 import { Container } from '@ux-apps/ui-container';
 import styles from './Footer.module.scss';
 
