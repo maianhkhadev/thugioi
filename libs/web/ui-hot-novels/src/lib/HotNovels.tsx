@@ -1,5 +1,5 @@
 'use client';
-import { Title } from 'rebear';
+import { Title, Button } from 'rebear';
 import { useHotNovels } from '@ux-apps/data-access-novels';
 import { NovelOverview } from '@ux-apps/ui-novel-overview';
 import styles from './HotNovels.module.scss';
@@ -11,6 +11,18 @@ export function HotNovels() {
     <section className={styles.section}>
       <header className={styles.header}>
         <Title level={3}>Truyện Hot</Title>
+
+        <div className={styles.filter}>
+          <Button variant="primary" size="sm">
+            Tuần
+          </Button>
+          <Button variant="secondary" size="sm">
+            Tháng
+          </Button>
+          <Button variant="secondary" size="sm">
+            Toàn bộ
+          </Button>
+        </div>
       </header>
 
       <main className={styles.main}>

@@ -1,6 +1,6 @@
 .novel {
   display: grid;
-  grid-template-columns: 6rem 1fr;
+  grid-template-columns: 6.5rem 1fr;
   grid-gap: 1rem;
   color: unset;
   text-decoration: unset;
@@ -11,6 +11,12 @@
   img {
     display: block;
     width: 100%;
-    aspect-ratio: 2 / 3;
+    height: auto;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
   }
 }

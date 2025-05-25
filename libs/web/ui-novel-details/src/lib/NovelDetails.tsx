@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import Link from 'next/link';
-import { Button } from 'rebear';
+import { Title, Button } from 'rebear';
 import styles from './NovelDetails.module.scss';
 
 export const NovelDetails = () => {
@@ -12,10 +12,10 @@ export const NovelDetails = () => {
           <img src="https://placehold.co/400" alt="" />
         </div>
         <div className={styles.basicInfo}>
-          <h1 className={styles.title}>Mạo hiểm giả cuối cùng</h1>
+          <Title level={2}>Mạo hiểm giả cuối cùng</Title>
           <ul className={styles.meta}>
             <li>
-              <strong>Tác giả:</strong> Dedart
+              <strong>Tác giả:</strong> <Link href="/writter/1">Dedart</Link>
             </li>
             <li>
               <strong>Thể loại:</strong> Huyền bí, Phiêu lưu, Hài hước
@@ -28,7 +28,7 @@ export const NovelDetails = () => {
             </li>
           </ul>
           <div className={styles.actions}>
-            <Link href={'/chapter/1'}>
+            <Link href="/chapter/1">
               <Button variant="primary" size="md">
                 Đọc Truyện
               </Button>
@@ -40,7 +40,9 @@ export const NovelDetails = () => {
         </div>
       </div>
       <div className={styles.description}>
-        <h2>Giới thiệu truyện</h2>
+        <Title className={styles.title} level={3}>
+          Giới thiệu truyện
+        </Title>
         <p>
           Một thời đại mà câu chuyện vô vọng, đau khổ và đầy bi thảm về sáu vị
           anh hùng đã phong ấn Dark Mage, kẻ tìm cách để tiêu diệt Maple World,

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Title } from 'rebear';
+import { Title, Paragraph } from 'rebear';
 import styles from './NovelOverview.module.scss';
 
 type NovelOverviewProps = {
@@ -15,10 +15,14 @@ export function NovelOverview(props: NovelOverviewProps) {
     <Link className={styles.novel} href={`/novel/${id}`}>
       <img src={thumbnailUrl} alt={name} />
 
-      <main>
+      <main className={styles.main}>
         <Title level={5}>{name}</Title>
-        <Title level={6}>Tác giả: Mai Anh Kha</Title>
-        <small>{description}</small>
+
+        <Paragraph>
+          <strong>Tác giả:</strong> Dedart
+        </Paragraph>
+
+        <Paragraph size="sm">{description}</Paragraph>
       </main>
     </Link>
   );

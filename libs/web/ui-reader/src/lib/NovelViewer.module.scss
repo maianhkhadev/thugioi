@@ -1,0 +1,16 @@
+.section {
+  background-color: #fafaf3;
+  border: 2px solid #eae4d3;
+  border-radius: 0.5rem;
+  padding: 2rem;
+
+  .header {
+    margin-bottom: 2.5rem;
+  }
+
+  .content {
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+}

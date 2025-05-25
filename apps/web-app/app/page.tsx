@@ -7,6 +7,8 @@ export default function Index() {
   return (
     <div className={styles.page}>
       <Container>
+        <img className={styles.banner} src="https://placehold.co/800x200" alt="" />
+
         <NewChapters />
 
         <HotNovels />
