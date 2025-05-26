@@ -8,7 +8,7 @@ type NovelViewerProps = {
 };
 
 export const NovelViewer = (props: NovelViewerProps) => {
-  const { title, content, fontSize } = props;
+  const { fontSize } = props;
 
   return (
     <section className={styles.section} style={{ fontSize }}>

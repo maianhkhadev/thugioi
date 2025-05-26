@@ -1,6 +1,5 @@
 'use client';
 import { useState } from 'react';
-import clsx from 'clsx';
 import { Container } from '@ux-apps/ui-container';
 import { Controls } from './Controls';
 import { NovelViewer } from './NovelViewer';
@@ -13,9 +12,9 @@ type ReaderProps = {
 };
 
 export const Reader = (props: ReaderProps) => {
-  const { id, title, content } = props;
-  const [fontSize, setFontSize] = useState(16);
-  const [darkMode, setDarkMode] = useState(false);
+  const { title, content } = props;
+  const [fontSize] = useState(16);
+  // const [darkMode, setDarkMode] = useState(false);
 
   return (
     <Container>

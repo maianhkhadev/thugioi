@@ -1,12 +1,7 @@
 'use client';
-import { useState } from 'react';
 import Link from 'next/link';
 import {
-  Button,
   ButtonIcon,
-  Modal,
-  ModalTitle,
-  ModalContent,
   Title,
   Paragraph,
 } from 'rebear';

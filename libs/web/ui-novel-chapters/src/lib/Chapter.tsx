@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './Chapter.module.scss';
 
 type ChapterProps = {
   id: number;
