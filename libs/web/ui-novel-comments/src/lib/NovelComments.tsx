@@ -38,11 +38,11 @@ export const NovelComments = () => {
       <Title className={styles.title} level={3}>
         Bình Luận
       </Title>
-      <ul>
+      <main className={styles.main}>
         {comments.map((comment) => (
           <Comment key={comment.id} {...comment} />
         ))}
-      </ul>
+      </main>
     </section>
   );
 };

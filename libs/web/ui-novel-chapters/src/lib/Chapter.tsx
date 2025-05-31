@@ -1,4 +1,8 @@
+'use client'
 import React from 'react';
+import Link from 'next/link';
+import { Title } from 'rebear'
+import styles from './Chapter.module.scss';
 
 type ChapterProps = {
   id: number;
@@ -9,9 +13,10 @@ export const Chapter = (props: ChapterProps) => {
   const { id, title } = props;
 
   return (
-    <li>
-      <a href={`/chapter/-${id}`}>{title}</a>
-    </li>
+    <Link className={styles.chapter} href={`/chapter/${id}`}>
+      <Title className={styles.title} level={6}>{title}</Title>
+      <div className={styles.date}>9 hours ago</div>
+    </Link>
   );
 };
 

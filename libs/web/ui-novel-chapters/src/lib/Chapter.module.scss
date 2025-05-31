@@ -1,0 +1,21 @@
+.chapter {
+  display: block;
+  background-color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+
+  &:hover {
+    background-color: #f9f9f9;
+  }
+
+  .title {
+    color: #333;
+  }
+
+  .date {
+    color: #888;
+    font-size: 0.75rem;
+  }
+}

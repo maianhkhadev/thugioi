@@ -19,11 +19,11 @@ export const NovelChapters = () => {
       <Title className={styles.title} level={3}>
         Danh Sách Chương
       </Title>
-      <ul>
+      <main className={styles.main}>
         {chapters.map((chapter) => (
           <Chapter key={chapter.id} {...chapter} />
         ))}
-      </ul>
+      </main>
     </section>
   );
 };

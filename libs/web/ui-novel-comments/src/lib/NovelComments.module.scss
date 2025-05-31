@@ -5,8 +5,9 @@
     margin-bottom: 0.75rem;
   }
 
-  ul {
-    list-style: none;
-    padding: 0;
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
