@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import { Title, Input, Button } from 'rebear';
 import styles from './NovelFilters.module.scss';
 
 const categories = [
@@ -27,6 +28,12 @@ export const NovelFilters = () => {
     );
   };
 
+  const handleChange = (event: React.FormEvent<HTMLInputElement>) => {
+    const target = event.target as HTMLInputElement;
+    const value = target.value;
+    setSearchText(value);
+  };
+
   const handleSearch = () => {
     console.log('Tên truyện:', searchText);
     console.log('Thể loại chọn:', selectedCategories);
@@ -34,29 +41,33 @@ export const NovelFilters = () => {
 
   return (
     <section className={styles.novelFilter}>
-      <h2>Lọc Truyện</h2>
+      <header className={styles.header}>
+        <Title level={3}>Lọc truyện</Title>
+      </header>
 
-      <div className={styles.searchBox}>
-        <input
-          type="text"
-          placeholder="Nhập tên truyện..."
-          value={searchText}
-          onChange={(e) => setSearchText(e.target.value)}
-        />
-        <button onClick={handleSearch}>Tìm kiếm</button>
-      </div>
+      <Input
+        className={styles.searchBox}
+        size="md"
+        placeholder="Nhập tên truyện..."
+        value={searchText}
+        onChange={handleChange}
+      />
 
       <div className={styles.categories}>
-        {categories.map((category) => (
-          <label key={category} className={styles.categoryItem}>
-            <input
-              type="checkbox"
-              checked={selectedCategories.includes(category)}
-              onChange={() => handleCategoryChange(category)}
-            />
-            {category}
-          </label>
-        ))}
+        {categories.map((category) => {
+          const selected = selectedCategories.includes(category);
+          const variant = selected ? 'primary' : 'secondary';
+
+          return (
+            <Button
+              variant={variant}
+              size="sm"
+              onClick={() => handleCategoryChange(category)}
+            >
+              {category}
+            </Button>
+          );
+        })}
       </div>
     </section>
   );
